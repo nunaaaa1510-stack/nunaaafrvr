@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Ibnu Saputra</title>
+  <link rel="stylesheet" href="ibnu .css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#Home">Portfolio</a>
+      </div>
+      <nav>
+        <ul id="menu-list">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Hamburger Button -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </div>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section class="hero" id="Home">
+    <h1 class="title">Porto<span>folio</span></h1>
+    <h2 class="subtitle">Ibnu Saputra</h2>
+    <div class="contact">
+      <p>My Account!!</p>
+      <br>
+      <a href="https://www.tiktok.com/id-ID/" class="btn">TikTok</a>
+      <a href="https://www.instagram.com/m.ibnu322/" class="btn">Instagram</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <img src="c:\Users\Administrator\Downloads\profile.jpeg" alt="Profile" class="profile-img">
+    <div class="about-text">
+      <h3>About Me</h3>
+      <p>
+        Hallo semuanya, namaku <b>Muhammad Ibnu Saputra</b>.  
+        Aku seorang pencinta kucing dan langit biru 🌤️  
+        Saat ini aku kelas 10 di Smk Skill Village Islamic School.  
+        Website ini adalah project pertamaku!
+      </p>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="tools" id="tools">
+    <h3>Tools yang sering digunakan :</h3>
+    <div class="tools-list">
+      <p>Canva</p>
+      <p>Visual Studio Code</p>
+      <p>Figma</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS / COLLECTION -->
+  <section class="projects blue" id="collection">
+    <h3>My Dream</h3>
+    <div class="project-gallery">
+      <img src="c:\Users\Administrator\Downloads\hacker 1.jfif" alt="hacker">
+      <img src="c:\Users\Administrator\Downloads\penulis.jfif" alt="penulis">
+      <img src="c:\Users\Administrator\Downloads\gitaris.jfif" alt="gitaris">
+    </div>
+  </section>
+
+  <section class="projects peach">
+    <h3>My Hobby</h3>
+    <div class="project-gallery">
+      <img src="c:\Users\Administrator\Downloads\Jae.jfif" alt="bernyanyi">
+      <img src="c:\Users\Administrator\Downloads\download.jfif" alt="bermain game">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-footer" id="contact">
+    <h3>Contact Me</h3>
+    <form action="#" method="post" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <h2>ayoo kita <br><span>berkreativitas!</span></h2>
+  </section>
+
+  <!-- SCRIPT -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuList = document.getElementById('menu-list');
+
+    menuToggle.addEventListener('click', () => {
+      menuList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
